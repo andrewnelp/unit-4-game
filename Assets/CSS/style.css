@@ -2,3 +2,23 @@
   max-width: 1100px;
   margin:auto;
 }
+
+#wins::after {
+  content: attr(data-winScore);
+  position:relative;
+  left: 10px;
+} 
+#wins[data-winScore = '0']::after {
+  color: red;
+}
+
+#losses::after {
+  content: attr(data-lossesScore);
+  position:relative;
+  left: 10px;
+} 
+
+#losses[data-lossesScore = '0']::after {
+  color:green;
+}
+

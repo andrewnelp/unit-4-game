@@ -15,24 +15,25 @@
 </head>
 
 <body>
-  <section class="container border border-dark ">
+  <section class="container shadow-lg">
     <div class="row my-2"> 
       <div class="col-6 "><h1>Crystal Collector</h1></div>
     </div>
 
     <div class="row my-5">
-      <div class="col-4 ">
+      <div class="col-4 bg-primary">
          <h3>Match The Number:</h3>
          <h3 id="mNum">  </h3>
         </div>
-      <div id="#" class="col-4">
-         <h3>Wins: <span id='wins'></span></h3>
-         <h3>Losses: <span id='losses'></span></h3>
+      <div id="winLoss" class="col-2 bg-success">
+         <h2 id='result'> </h2>
+         <h3  data-winScore = '0'>Wins: <span id='wins'></span></h3>
+         <h3  data-lossesScore = '0'>Losses: <span id='losses'></span></h3>
       </div>
     </div>
 
-    <div class="row my-5 ">
-      <div class="col-10 ">
+    <div class="row my-5 text-center">
+      <div class="col-6 bg-danger ">
         <img class='m-2 img-fluid img-thumbnail' src="Assets/Images/1.jpg" alt="">
         <img class='m-2 img-fluid img-thumbnail'src="Assets/Images/2.jpg" alt="">
         <img class='m-2 img-fluid img-thumbnail'src="Assets/Images/3.jpg" alt="">
@@ -41,7 +42,7 @@
     </div>
 
     <div class="row my-5 ">
-      <div class="col-10 ">
+      <div class="col-6 bg-light ">
         <h3>Your Total Score is:</h3>
         <h3 id='totScore'>  </h3>
       </div>
