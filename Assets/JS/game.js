@@ -2,7 +2,6 @@ $(function() {
 
 // create variables
 var mNumber;
-// var randomNum;
   var wins = 0;
   var losses = 0;
   var totalScore = 0;
@@ -29,10 +28,15 @@ $('#losses').text(losses);
 // document.querySelector('#losses').dataset.lossesScore = losses;
 totalScore = 0
 $('#totScore').text(totalScore);
-  // $('#result').fadeIn('slow');  
 }
 
 startGame();
+
+  // create Math random function
+
+function getRandom(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
 
 // create on click events for one, two...and find totalScore sum
 // Main Game
@@ -54,15 +58,7 @@ startGame();
 //     // $(this).animate({ width: '-=5px', opacity: '1.0' }, 300);
 //     totalScore += crystalValue;
 //     $('#totScore').text(totalScore);
-    
-//     if (totalScore == mNumber) {
-//       wins++;
-//       document.querySelector('#wins').dataset.winScore = wins;
-//     }
-//     else if (totalScore > mNumber) {
-//       losses++;
-//       alert('you lose');
-//     }
+//     logic()
 //   })
 
   // set logic for your Total Score id='totScore'
@@ -116,12 +112,6 @@ startGame();
   $('#totScore').text(totalScore);
 })
 
-// create Math random function
 
-  function getRandom (min, max) {
-    return Math.floor(Math.random() * (max - min) + min);
-  }
-
-//create animations when game is win and lost
 
 });
